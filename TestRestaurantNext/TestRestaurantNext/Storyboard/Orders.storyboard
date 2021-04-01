@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bw6-5S-ayQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Orders View Controller-->
+        <scene sceneID="Fyg-Gt-7QV">
+            <objects>
+                <viewController storyboardIdentifier="OrdersViewController" id="Bw6-5S-ayQ" customClass="OrdersViewController" customModule="TestRestaurantNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3d-Wl-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-pg-eOY">
+                                <rect key="frame" x="20" y="74" width="374" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GKW-Mk-LGb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J6S-pg-eOY" firstAttribute="top" secondItem="GKW-Mk-LGb" secondAttribute="top" constant="30" id="8GL-Ao-HpT"/>
+                            <constraint firstItem="GKW-Mk-LGb" firstAttribute="bottom" secondItem="J6S-pg-eOY" secondAttribute="bottom" id="B19-A5-djt"/>
+                            <constraint firstItem="GKW-Mk-LGb" firstAttribute="trailing" secondItem="J6S-pg-eOY" secondAttribute="trailing" constant="20" id="XmQ-eM-uuu"/>
+                            <constraint firstItem="J6S-pg-eOY" firstAttribute="leading" secondItem="GKW-Mk-LGb" secondAttribute="leading" constant="20" id="do4-RK-Bjw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="J6S-pg-eOY" id="WNj-NO-RzF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8p5-KN-rDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.18840579710147" y="130.58035714285714"/>
+        </scene>
+        <!--Detail Order View Controller-->
+        <scene sceneID="s3O-CM-pZc">
+            <objects>
+                <viewController storyboardIdentifier="DetailOrderViewController" id="hb4-gV-5My" customClass="DetailOrderViewController" customModule="TestRestaurantNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMq-Rb-2k9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-zS-EmR">
+                                <rect key="frame" x="71.5" y="64" width="271.5" height="50"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-ud-NPd">
+                                <rect key="frame" x="20" y="180" width="83" height="18"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYG-q8-GYe">
+                                <rect key="frame" x="355" y="144" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlP-e1-tBy">
+                                <rect key="frame" x="350" y="179" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="№ order:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-Zw-ZPk">
+                                <rect key="frame" x="20" y="215" width="66" height="18"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBO-Aa-wjL">
+                                <rect key="frame" x="350" y="214" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTE-C7-ROS">
+                                <rect key="frame" x="20" y="250" width="66.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt9-iQ-6wQ">
+                                <rect key="frame" x="20" y="285" width="37" height="18"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO2-AJ-ha3">
+                                <rect key="frame" x="350" y="249" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-Cw-pqM">
+                                <rect key="frame" x="350" y="284" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csi-T1-emK">
+                                <rect key="frame" x="20" y="145" width="49.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s9E-oO-ShI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CTE-C7-ROS" firstAttribute="leading" secondItem="s9E-oO-ShI" secondAttribute="leading" constant="20" id="0es-3X-HRT"/>
+                            <constraint firstItem="dTn-ud-NPd" firstAttribute="leading" secondItem="s9E-oO-ShI" secondAttribute="leading" constant="20" id="2dd-WN-Tmn"/>
+                            <constraint firstItem="QO2-AJ-ha3" firstAttribute="top" secondItem="xBO-Aa-wjL" secondAttribute="bottom" constant="15" id="5V5-nK-gb7"/>
+                            <constraint firstItem="gVu-Zw-ZPk" firstAttribute="centerY" secondItem="xBO-Aa-wjL" secondAttribute="centerY" id="66e-c0-gpa"/>
+                            <constraint firstItem="zt9-iQ-6wQ" firstAttribute="leading" secondItem="s9E-oO-ShI" secondAttribute="leading" constant="20" id="BHd-bO-hkd"/>
+                            <constraint firstItem="ayt-zS-EmR" firstAttribute="centerX" secondItem="s9E-oO-ShI" secondAttribute="centerX" id="Git-gG-jFo"/>
+                            <constraint firstItem="csi-T1-emK" firstAttribute="centerY" secondItem="bYG-q8-GYe" secondAttribute="centerY" id="IsQ-gJ-eyQ"/>
+                            <constraint firstItem="s9E-oO-ShI" firstAttribute="trailing" secondItem="dlP-e1-tBy" secondAttribute="trailing" constant="20" id="KJP-OS-JzS"/>
+                            <constraint firstItem="CTE-C7-ROS" firstAttribute="centerY" secondItem="QO2-AJ-ha3" secondAttribute="centerY" id="M4s-Sh-tg2"/>
+                            <constraint firstItem="gVu-Zw-ZPk" firstAttribute="leading" secondItem="s9E-oO-ShI" secondAttribute="leading" constant="20" id="MBb-ws-rJI"/>
+                            <constraint firstItem="xBO-Aa-wjL" firstAttribute="top" secondItem="dlP-e1-tBy" secondAttribute="bottom" constant="15" id="T5A-7m-PEL"/>
+                            <constraint firstItem="s9E-oO-ShI" firstAttribute="trailing" secondItem="ndZ-Cw-pqM" secondAttribute="trailing" constant="20" id="Xty-5U-yZr"/>
+                            <constraint firstItem="ndZ-Cw-pqM" firstAttribute="top" secondItem="QO2-AJ-ha3" secondAttribute="bottom" constant="15" id="YjB-1c-EVU"/>
+                            <constraint firstItem="s9E-oO-ShI" firstAttribute="trailing" secondItem="bYG-q8-GYe" secondAttribute="trailing" constant="15" id="Zdx-ck-iec"/>
+                            <constraint firstItem="s9E-oO-ShI" firstAttribute="trailing" secondItem="xBO-Aa-wjL" secondAttribute="trailing" constant="20" id="bQe-Uy-ItN"/>
+                            <constraint firstItem="dlP-e1-tBy" firstAttribute="top" secondItem="bYG-q8-GYe" secondAttribute="bottom" constant="15" id="cUg-2S-7V2"/>
+                            <constraint firstItem="QO2-AJ-ha3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CTE-C7-ROS" secondAttribute="trailing" constant="20" id="gyk-XJ-vlq"/>
+                            <constraint firstItem="s9E-oO-ShI" firstAttribute="trailing" secondItem="QO2-AJ-ha3" secondAttribute="trailing" constant="20" id="nko-RP-9na"/>
+                            <constraint firstItem="zt9-iQ-6wQ" firstAttribute="centerY" secondItem="ndZ-Cw-pqM" secondAttribute="centerY" id="r0F-dI-JOg"/>
+                            <constraint firstItem="dTn-ud-NPd" firstAttribute="centerY" secondItem="dlP-e1-tBy" secondAttribute="centerY" id="rEB-fE-Y77"/>
+                            <constraint firstItem="bYG-q8-GYe" firstAttribute="top" secondItem="ayt-zS-EmR" secondAttribute="bottom" constant="30" id="sXu-ay-dM7"/>
+                            <constraint firstItem="csi-T1-emK" firstAttribute="leading" secondItem="s9E-oO-ShI" secondAttribute="leading" constant="20" id="w0t-9h-eez"/>
+                            <constraint firstItem="ayt-zS-EmR" firstAttribute="top" secondItem="s9E-oO-ShI" secondAttribute="top" constant="20" id="x85-V1-wdQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateOrderLabel" destination="dlP-e1-tBy" id="MWS-48-zjA"/>
+                        <outlet property="detailsOrderLabel" destination="QO2-AJ-ha3" id="fak-jU-dUk"/>
+                        <outlet property="orderNumberLabel" destination="xBO-Aa-wjL" id="oFY-Rf-whi"/>
+                        <outlet property="statusLabel" destination="bYG-q8-GYe" id="p9s-az-4pb"/>
+                        <outlet property="totalCostOfOrderLabel" destination="ndZ-Cw-pqM" id="DGb-yc-08i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2q-NX-cbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bonuce View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BonuceViewController" customModule="TestRestaurantNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2k4-eQ-sIS">
+                                <rect key="frame" x="144.33333333333334" y="94" width="125.33333333333334" height="34"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLs-ff-b6b">
+                                <rect key="frame" x="154.66666666666666" y="138" width="104.99999999999997" height="78"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="70"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bonuce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-wx-ZXl">
+                                <rect key="frame" x="157" y="236.66666666666666" width="100" height="33.999999999999972"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgd-tE-02f">
+                                <rect key="frame" x="0.0" y="290.66666666666669" width="414" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR PROMO CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-G3-21E">
+                                        <rect key="frame" x="86.333333333333329" y="32" width="241.66666666666669" height="26"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="23"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CH34IG" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diO-gT-HIX">
+                                        <rect key="frame" x="113" y="72" width="188" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-zV-gtF">
+                                        <rect key="frame" x="364" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XMw-zV-gtF" secondAttribute="height" multiplier="1:1" id="WZV-so-8eY"/>
+                                            <constraint firstAttribute="width" constant="40" id="bKM-Jm-1n5"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="pressedShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="et3-Yo-5Z2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3fD-SB-BFo"/>
+                                    <constraint firstItem="5bf-G3-21E" firstAttribute="centerX" secondItem="Fgd-tE-02f" secondAttribute="centerX" id="4R0-5d-VWZ"/>
+                                    <constraint firstItem="diO-gT-HIX" firstAttribute="centerX" secondItem="5bf-G3-21E" secondAttribute="centerX" id="Hr5-OC-X7e"/>
+                                    <constraint firstItem="5bf-G3-21E" firstAttribute="centerY" secondItem="Fgd-tE-02f" secondAttribute="centerY" constant="-30" id="ZIG-pw-pYt"/>
+                                    <constraint firstAttribute="trailing" secondItem="XMw-zV-gtF" secondAttribute="trailing" constant="10" id="eEe-Ra-fJa"/>
+                                    <constraint firstItem="XMw-zV-gtF" firstAttribute="top" secondItem="Fgd-tE-02f" secondAttribute="top" constant="10" id="j12-QU-vxk"/>
+                                    <constraint firstItem="diO-gT-HIX" firstAttribute="top" secondItem="5bf-G3-21E" secondAttribute="bottom" constant="14" id="phE-uy-29d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share the promo code with your friends and get bonuses with every purchase! The number of invited friends is not limited" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB5-Mg-JP9">
+                                <rect key="frame" x="20" y="470.66666666666669" width="374" height="61.000000000000057"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w2c-wx-ZXl" firstAttribute="top" secondItem="fLs-ff-b6b" secondAttribute="bottom" constant="20.666666666666686" id="Iw0-NZ-EH3"/>
+                            <constraint firstItem="Fgd-tE-02f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LNQ-XX-isE"/>
+                            <constraint firstItem="fLs-ff-b6b" firstAttribute="top" secondItem="2k4-eQ-sIS" secondAttribute="bottom" constant="10" id="QfO-sw-FDz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgd-tE-02f" secondAttribute="trailing" id="Rjt-yC-kyd"/>
+                            <constraint firstItem="Fgd-tE-02f" firstAttribute="top" secondItem="w2c-wx-ZXl" secondAttribute="bottom" constant="20" id="UJP-QU-pGj"/>
+                            <constraint firstItem="2k4-eQ-sIS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="eLH-dT-Bkr"/>
+                            <constraint firstItem="w2c-wx-ZXl" firstAttribute="centerX" secondItem="fLs-ff-b6b" secondAttribute="centerX" id="eXf-UQ-IUT"/>
+                            <constraint firstItem="fLs-ff-b6b" firstAttribute="centerX" secondItem="2k4-eQ-sIS" secondAttribute="centerX" id="gbJ-FG-jJR"/>
+                            <constraint firstItem="qB5-Mg-JP9" firstAttribute="top" secondItem="Fgd-tE-02f" secondAttribute="bottom" constant="30" id="gc6-k2-FYH"/>
+                            <constraint firstItem="2k4-eQ-sIS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i50-OF-wZF"/>
+                            <constraint firstItem="qB5-Mg-JP9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="noX-65-r9M"/>
+                            <constraint firstItem="qB5-Mg-JP9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s1E-LW-NGf"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonShare" destination="XMw-zV-gtF" id="lbG-Bn-mIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
